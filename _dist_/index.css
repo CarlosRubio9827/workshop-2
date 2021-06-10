@@ -1,0 +1,32 @@
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+
+.fox-img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+button{
+    margin: 0px;
+    width: 130px;
+    height: 30px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    /* padding: 5px 5px 5px 5px; */
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+    color: white;
+}
+
+#images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.getFox{
+    background-color: rgba(18, 141, 18, 0.844);
+}
+.deleteFox{
+    background-color: rgba(187, 8, 8, 0.844);
+}
