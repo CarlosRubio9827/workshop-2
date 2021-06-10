@@ -1,3 +1,6 @@
+import { registerImg } from './lazy'
+
+
 const getFox = document.querySelector('.getFox')
 const deleteFox = document.querySelector('.deleteFox')
 const baseUrl = 'https://randomfox.ca/floof/';
@@ -9,11 +12,11 @@ fetch(baseUrl)
   .then(data => {
 
     const img = document.createElement("img");
-    img.src = data.image;
+    img.dataset.src = data.image;
     img.classList='mx-auto m-5 fox-img'
-    img.loading = 'lazy'
     const container = document.querySelector("#images")
     container.append(img)
+    registerImg(img)
 });
 }
 
